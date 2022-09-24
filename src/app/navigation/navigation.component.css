@@ -20,7 +20,7 @@
 
 .links {
     margin-top: 6px;
-    margin-left: 10px;
+    margin-left: 20px;
 }
 
 .links a {
@@ -30,6 +30,10 @@
     transition: 0.2s;
 }
 
+.links a:first-child {
+    margin-left: 0;
+}
+
 .links a:hover {
     color: #FF6392;
 }
@@ -37,5 +41,8 @@
 @media only screen and (max-width: 600px) {
     .navigation {
         flex-direction: column;
+    }
+    .links {
+        margin-left: 0;
     }
 }
