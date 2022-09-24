@@ -1,0 +1,41 @@
+.navigation {
+    background-color: #5AA9E6;
+    padding: 20px;
+    width: 100vw;
+    z-index: 5;
+    position: fixed;
+    font-family: 'Oswald', sans-serif;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+.logo {
+    font-weight: bolder;
+    font-size: 1.9rem;
+}
+
+.links {
+    margin-top: 6px;
+    margin-left: 10px;
+}
+
+.links a {
+    margin-left: 15px;
+    color: white;
+    text-decoration: none;
+    transition: 0.2s;
+}
+
+.links a:hover {
+    color: #FF6392;
+}
+
+@media only screen and (max-width: 600px) {
+    .navigation {
+        flex-direction: column;
+    }
+}
