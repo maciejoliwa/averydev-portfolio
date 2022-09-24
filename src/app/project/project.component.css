@@ -2,6 +2,11 @@
     background-color: rgb(233, 233, 233);
     border-radius: 5px;
     padding: 15px 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    height: 200px;
 }
 
 .project__name {

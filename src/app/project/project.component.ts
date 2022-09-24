@@ -12,9 +12,16 @@ export class ProjectComponent implements OnInit {
   @Input() public name: string = "";
   @Input() public githubLink: string = "";
   @Input() public description: string = "";
-  @Input() public technologies: string[] = [];
+  @Input() public technologies: string[] | string = [];
+
+  private technologiesToString(): void {
+    if (Array.isArray(this.technologies)) {
+        this.technologies = this.technologies.join(", ");
+    }
+  }
 
   ngOnInit(): void {
+    this.technologiesToString();
   }
 
 }

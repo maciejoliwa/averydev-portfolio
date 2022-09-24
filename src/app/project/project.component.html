@@ -6,11 +6,11 @@
         {{ description }}
     </div>
     <div class="project__technologies">
-        <div *ngFor="let technology of technologies" class="project__technology">
-            {{technology}}
+        <div class="project__technology">
+            {{technologies}}
         </div>
     </div>
-    <a [href]="githubLink">
+    <a target="_blank" [href]="githubLink">
         <img src="/assets/github.png" width="30px" alt="">
         <div>
             GITHUB
