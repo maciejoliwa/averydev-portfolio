@@ -1,0 +1,11 @@
+.contact-wrapper {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    font-family: 'Oswald', sans-serif;
+    color: #FF6392;
+    flex-direction: column;
+    font-size: 1.6rem;
+    align-items: center;
+}

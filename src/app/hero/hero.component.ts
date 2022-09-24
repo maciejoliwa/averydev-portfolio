@@ -9,6 +9,10 @@ export class HeroComponent implements OnInit {
 
   constructor() { }
 
+  public moveTo(id: string) {
+    location.replace(id);
+  }
+
   ngOnInit(): void {
   }
 
